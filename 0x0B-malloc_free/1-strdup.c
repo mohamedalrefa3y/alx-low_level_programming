@@ -6,13 +6,13 @@
 		
 /**
 		
- * _strdup - duplicate to new memory space location
+* _strdup - duplicate to new memory space location
 		
- * @str: char
+* @str: char
 		
- * Return: 0
+* Return: 0
 		
- */
+*/
 		
 char *_strdup(char *str)
 		
