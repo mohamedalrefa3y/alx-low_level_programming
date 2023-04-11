@@ -28,15 +28,15 @@ if (str == NULL)
 		
 return (NULL);
 		
-	i = 0;
+i = 0;
 		
 while (str[i] != '\0')
 		
-		i++;
+i++;
 		
 
 		
-	aaa = malloc(sizeof(char) * (i + 1));
+aaa = malloc(sizeof(char) * (i + 1));
 		
 
 		
@@ -48,7 +48,7 @@ return (NULL);
 		
 for (r = 0; str[r]; r++)
 		
-		aaa[r] = str[r];
+aaa[r] = str[r];
 		
 
 		

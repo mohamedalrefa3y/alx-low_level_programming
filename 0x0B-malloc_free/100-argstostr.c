@@ -32,19 +32,19 @@ return (NULL);
 		
 for (i = 0; i < ac; i++)
 		
-	{
+{
 		
 for (n = 0; av[i][n]; n++)
 		
-	l++;
+l++;
 		
-	}
+}
 		
-	l += ac;
+l += ac;
 		
 
 		
-	str = malloc(sizeof(char) * l + 1);
+str = malloc(sizeof(char) * l + 1);
 		
 if (str == NULL)
 		
@@ -52,27 +52,27 @@ return (NULL);
 		
 for (i = 0; i < ac; i++)
 		
-	{
+{
 		
 for (n = 0; av[i][n]; n++)
 		
-	{
+{
 		
-		str[r] = av[i][n];
+str[r] = av[i][n];
 		
-		r++;
+r++;
 		
-	}
+}
 		
 if (str[r] == '\0')
 		
-	{
+{
 		
-		str[r++] = '\n';
+str[r++] = '\n';
 		
-	}
+}
 		
-	}
+}
 		
 return (str);
 		
