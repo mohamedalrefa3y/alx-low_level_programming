@@ -74,41 +74,41 @@ char **strtow(char *str)
 		
 {
 		
-	char **matrix, *tmp;
+char **matrix, *tmp;
 		
-	int i, k = 0, len = 0, words, c = 0, start, end;
+int i, k = 0, len = 0, words, c = 0, start, end;
 		
 
 		
-	while (*(str + len))
+while (*(str + len))
 		
 		len++;
 		
 	words = count_word(str);
 		
-	if (words == 0)
+if (words == 0)
 		
-		return (NULL);
+return (NULL);
 		
 
 		
 	matrix = (char **) malloc(sizeof(char *) * (words + 1));
 		
-	if (matrix == NULL)
+if (matrix == NULL)
 		
-		return (NULL);
+return (NULL);
 		
 
 		
-	for (i = 0; i <= len; i++)
+for (i = 0; i <= len; i++)
 		
 	{
 		
-		if (str[i] == ' ' || str[i] == '\0')
+if (str[i] == ' ' || str[i] == '\0')
 		
 		{
 		
-			if (c)
+if (c)
 		
 			{
 		
@@ -116,11 +116,11 @@ char **strtow(char *str)
 		
 				tmp = (char *) malloc(sizeof(char) * (c + 1));
 		
-				if (tmp == NULL)
+if (tmp == NULL)
 		
-					return (NULL);
+return (NULL);
 		
-				while (start < end)
+while (start < end)
 		
 					*tmp++ = str[start++];
 		
@@ -136,9 +136,9 @@ char **strtow(char *str)
 		
 		}
 		
-		else if (c++ == 0)
+else if (c++ == 0)
 		
-			start = i;
+	start = i;
 		
 	}
 		
@@ -148,6 +148,6 @@ char **strtow(char *str)
 		
 
 		
-	return (matrix);
+return (matrix);
 		
 }

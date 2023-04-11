@@ -18,19 +18,19 @@ char *_strdup(char *str)
 		
 {
 		
-	char *aaa;
+char *aaa;
 		
-	int i, r = 0;
+int i, r = 0;
 		
 
 		
-	if (str == NULL)
+if (str == NULL)
 		
-		return (NULL);
+return (NULL);
 		
 	i = 0;
 		
-	while (str[i] != '\0')
+while (str[i] != '\0')
 		
 		i++;
 		
@@ -40,18 +40,18 @@ char *_strdup(char *str)
 		
 
 		
-	if (aaa == NULL)
+if (aaa == NULL)
 		
-		return (NULL);
+return (NULL);
 		
 
 		
-	for (r = 0; str[r]; r++)
+for (r = 0; str[r]; r++)
 		
 		aaa[r] = str[r];
 		
 
 		
-	return (aaa);
+return (aaa);
 		
 }
